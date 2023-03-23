@@ -1,0 +1,78 @@
+23 Mar 2023 14:42:26,094 INFO  com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 21 <init> - Initializing OperatorsDBRepository with properties: {jdbc.url=jdbc:sqlite:D:\Facultate\MPP\ProiectJava\swimMaster.db}
+23 Mar 2023 14:42:26,099 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 98 store - Enter saving operator Username regeleShaman2002 - password: toates_reale_toates_imaginare 
+23 Mar 2023 14:42:26,100 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 45 getConnection - Enter
+23 Mar 2023 14:42:26,100 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 23 getNewConnection - Enter
+23 Mar 2023 14:42:26,100 INFO  com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:D:\Facultate\MPP\ProiectJava\swimMaster.db
+23 Mar 2023 14:42:26,101 INFO  com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 29 getNewConnection - user: null
+23 Mar 2023 14:42:26,101 INFO  com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 30 getNewConnection - pass: null
+23 Mar 2023 14:42:26,242 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 54 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@59a4ed05)
+23 Mar 2023 14:42:26,252 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 105 store - Saved 1 instances
+23 Mar 2023 14:42:26,253 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 111 store - Exit
+23 Mar 2023 14:42:26,254 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 73 getAll - Enter extracting operators
+23 Mar 2023 14:42:26,254 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 45 getConnection - Enter
+23 Mar 2023 14:42:26,254 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 54 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@59a4ed05)
+23 Mar 2023 14:42:26,257 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 92 getAll - Exit
+23 Mar 2023 14:42:26,257 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 50 getOneByUsername - Enter extracting operator with username regeleShaman2002
+23 Mar 2023 14:42:26,258 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 45 getConnection - Enter
+23 Mar 2023 14:42:26,258 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 54 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@59a4ed05)
+23 Mar 2023 14:42:26,258 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 62 getOneByUsername - Exit
+23 Mar 2023 14:42:26,258 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 117 delete - Enter deleting operator 25 
+23 Mar 2023 14:42:26,258 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 45 getConnection - Enter
+23 Mar 2023 14:42:26,259 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 54 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@59a4ed05)
+23 Mar 2023 14:42:26,259 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 27 getOne - Enter extracting operator with id 25
+23 Mar 2023 14:42:26,259 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 45 getConnection - Enter
+23 Mar 2023 14:42:26,259 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 54 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@59a4ed05)
+23 Mar 2023 14:42:26,260 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 39 getOne - Exit
+23 Mar 2023 14:42:26,263 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 125 delete - Operator 1 deleted
+23 Mar 2023 14:46:34,638 INFO  com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 21 <init> - Initializing OperatorsDBRepository with properties: {jdbc.url=jdbc:sqlite:D:\Facultate\MPP\ProiectJava\swimMaster.db}
+23 Mar 2023 14:46:34,643 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 98 store - Enter saving operator Username regeleShaman2002 - password: toates_reale_toates_imaginare 
+23 Mar 2023 14:46:34,644 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 45 getConnection - Enter
+23 Mar 2023 14:46:34,644 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 23 getNewConnection - Enter
+23 Mar 2023 14:46:34,644 INFO  com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:D:\Facultate\MPP\ProiectJava\swimMaster.db
+23 Mar 2023 14:46:34,644 INFO  com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 29 getNewConnection - user: null
+23 Mar 2023 14:46:34,644 INFO  com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 30 getNewConnection - pass: null
+23 Mar 2023 14:46:34,789 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 54 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@34fdd45a)
+23 Mar 2023 14:46:34,798 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 105 store - Saved 1 instances
+23 Mar 2023 14:46:34,799 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 111 store - Exit
+23 Mar 2023 14:46:34,799 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 73 getAll - Enter extracting operators
+23 Mar 2023 14:46:34,799 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 45 getConnection - Enter
+23 Mar 2023 14:46:34,800 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 54 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@34fdd45a)
+23 Mar 2023 14:46:34,803 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 92 getAll - Exit
+23 Mar 2023 14:46:34,803 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 50 getOneByUsername - Enter extracting operator with username regeleShaman2002
+23 Mar 2023 14:46:34,804 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 45 getConnection - Enter
+23 Mar 2023 14:46:34,804 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 54 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@34fdd45a)
+23 Mar 2023 14:46:34,805 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 62 getOneByUsername - Exit
+23 Mar 2023 14:46:34,805 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 117 delete - Enter deleting operator 26 
+23 Mar 2023 14:46:34,805 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 45 getConnection - Enter
+23 Mar 2023 14:46:34,805 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 54 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@34fdd45a)
+23 Mar 2023 14:46:34,805 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 27 getOne - Enter extracting operator with id 26
+23 Mar 2023 14:46:34,805 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 45 getConnection - Enter
+23 Mar 2023 14:46:34,805 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 54 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@34fdd45a)
+23 Mar 2023 14:46:34,806 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 39 getOne - Exit
+23 Mar 2023 14:46:34,809 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 125 delete - Operator 1 deleted
+23 Mar 2023 14:47:06,648 INFO  com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 21 <init> - Initializing OperatorsDBRepository with properties: {jdbc.url=jdbc:sqlite:D:\Facultate\MPP\ProiectJava\swimMaster.db}
+23 Mar 2023 14:47:06,652 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 98 store - Enter saving operator Username regeleShaman2002 - password: toates_reale_toates_imaginare 
+23 Mar 2023 14:47:06,652 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 45 getConnection - Enter
+23 Mar 2023 14:47:06,652 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 23 getNewConnection - Enter
+23 Mar 2023 14:47:06,652 INFO  com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 28 getNewConnection - trying to connect to database ... jdbc:sqlite:D:\Facultate\MPP\ProiectJava\swimMaster.db
+23 Mar 2023 14:47:06,652 INFO  com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 29 getNewConnection - user: null
+23 Mar 2023 14:47:06,652 INFO  com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 30 getNewConnection - pass: null
+23 Mar 2023 14:47:06,781 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 54 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@549008e4)
+23 Mar 2023 14:47:06,792 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 105 store - Saved 1 instances
+23 Mar 2023 14:47:06,792 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 111 store - Exit
+23 Mar 2023 14:47:06,793 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 73 getAll - Enter extracting operators
+23 Mar 2023 14:47:06,793 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 45 getConnection - Enter
+23 Mar 2023 14:47:06,793 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 54 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@549008e4)
+23 Mar 2023 14:47:06,798 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 92 getAll - Exit
+23 Mar 2023 14:47:06,798 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 50 getOneByUsername - Enter extracting operator with username regeleShaman2002
+23 Mar 2023 14:47:06,798 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 45 getConnection - Enter
+23 Mar 2023 14:47:06,798 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 54 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@549008e4)
+23 Mar 2023 14:47:06,799 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 62 getOneByUsername - Exit
+23 Mar 2023 14:47:06,799 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 117 delete - Enter deleting operator 27 
+23 Mar 2023 14:47:06,799 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 45 getConnection - Enter
+23 Mar 2023 14:47:06,799 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 54 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@549008e4)
+23 Mar 2023 14:47:06,800 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 27 getOne - Enter extracting operator with id 27
+23 Mar 2023 14:47:06,800 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 45 getConnection - Enter
+23 Mar 2023 14:47:06,800 TRACE com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils 54 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@549008e4)
+23 Mar 2023 14:47:06,801 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 39 getOne - Exit
+23 Mar 2023 14:47:06,804 TRACE com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository 125 delete - Operator 1 deleted

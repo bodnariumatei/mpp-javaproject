@@ -1,0 +1,16 @@
+Organizatorii unui concurs de înot folosesc un sistem soft pentru înscrierea participanților.
+La diferite oficii din țară se folosește acest sistem.
+Persoana de la fiecare oficiu are o aplicație desktop cu următoarele funcționalități:
+1. Login.
+    După autentificarea cu succes, o nouă fereastră se deschide în care sunt afișate toate probele
+    (distanța: 50m, 200m, 800m, 1500m, stilul: liber, spate, fluture, mixt) la care se poate înscrie un participant
+    și numărul de participanți deja înscriși pentru fiecare probă.
+2. Căutare.
+    După autentificarea cu succes, persoana de la oficiu poate căuta participanții deja înscriși la o
+    anumită probă. Aplicația va afișa în alta listă/alt tabel toți participanții inscriși la proba respectivă: numele
+    participantului, vârsta și toate probele la care s-a înscris participantul.
+3. Înscriere.
+    Un participant se poate înscrie la mai multe probe. La înscriere, persoana de la oficiu introduce
+    numele participantului, vârsta și probele la care vrea să participe. După efectuarea unei înscrieri, toate
+    persoanele de la celelalte oficii văd lista actualizată a probelor și a numărului de participanți înscriși.
+4. Logout
