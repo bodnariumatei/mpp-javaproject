@@ -4,7 +4,6 @@ public class Operator extends Entity<Integer> {
     private String username, password;
 
     public Operator(String username, String password) {
-        super(0);
         this.username = username;
         this.password = password;
     }

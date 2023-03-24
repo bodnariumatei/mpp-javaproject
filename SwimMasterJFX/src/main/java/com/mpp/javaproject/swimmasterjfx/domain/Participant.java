@@ -1,27 +1,33 @@
 package com.mpp.javaproject.swimmasterjfx.domain;
 
+import java.time.LocalDateTime;
+
 public class Participant extends Entity<Integer> {
-    private String nume;
-    private int varsta;
-    public Participant(Integer id, String nume, int varsta) {
-        super(id);
-        this.nume = nume;
-        this.varsta = varsta;
+    private String name;
+    private LocalDateTime dateOfBirth;
+    public Participant(String name, LocalDateTime dateOfBirth) {
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
     }
 
-    public String getnume() {
-        return nume;
+    public String getName() {
+        return name;
     }
 
-    public void setnume(String nume) {
-        this.nume = nume;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getvarsta() {
-        return varsta;
+    public LocalDateTime getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setvarsta(int varsta) {
-        this.varsta = varsta;
+    public void setDateOfBirth(LocalDateTime dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
+
+    public int getAge() {
+        return LocalDateTime.now().getYear() - dateOfBirth.getYear();
+    }
+
 }

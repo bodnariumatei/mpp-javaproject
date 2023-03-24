@@ -29,20 +29,21 @@ public class OperatorsDbRepository implements IOperatorsRepository{
         try(PreparedStatement preparedStatement = con.prepareStatement("select * from operators where id=?")){
             preparedStatement.setInt(1,id);
             ResultSet result = preparedStatement.executeQuery();
-            result.next();
-            int oid = result.getInt("id");
-            String username = result.getString("username");
-            String password = result.getString("password");
+            if(result.next()) {
+                int oid = result.getInt("id");
+                String username = result.getString("username");
+                String password = result.getString("password");
 
-            Operator operator = new Operator(username, password);
-            operator.setId(oid);
-            logger.traceExit();
-            return operator;
+                Operator operator = new Operator(username, password);
+                operator.setId(oid);
+                logger.traceExit();
+                return operator;
+            }
         }catch (SQLException ex) {
             logger.error(ex);
             System.err.println("Error DB " + ex);
-            return null;
         }
+        return null;
     }
 
     @Override
@@ -52,27 +53,28 @@ public class OperatorsDbRepository implements IOperatorsRepository{
         try(PreparedStatement preparedStatement = con.prepareStatement("select * from operators where username=?")){
             preparedStatement.setString(1,username);
             ResultSet result = preparedStatement.executeQuery();
-            result.next();
-            int id = result.getInt("id");
-            String oUsername = result.getString("username");
-            String password = result.getString("password");
+            if(result.next()) {
+                int id = result.getInt("id");
+                String oUsername = result.getString("username");
+                String password = result.getString("password");
 
-            Operator operator = new Operator(oUsername, password);
-            operator.setId(id);
-            logger.traceExit();
-            return operator;
+                Operator operator = new Operator(oUsername, password);
+                operator.setId(id);
+                logger.traceExit();
+                return operator;
+            }
         }catch (SQLException ex) {
             logger.error(ex);
             System.err.println("Error DB " + ex);
-            return null;
         }
+        return null;
     }
 
     @Override
     public Iterable<Operator> getAll() {
         logger.traceEntry("extracting operators");
         Connection con = dbUtils.getConnection();
-        List<Operator> cars = new ArrayList<>();
+        List<Operator> operators = new ArrayList<>();
         try(PreparedStatement preparedStatement = con.prepareStatement("select * from operators")){
             try(ResultSet result = preparedStatement.executeQuery()) {
                 while (result.next()){
@@ -82,7 +84,7 @@ public class OperatorsDbRepository implements IOperatorsRepository{
 
                     Operator operator = new Operator(username, password);
                     operator.setId(id);
-                    cars.add(operator);
+                    operators.add(operator);
                 }
             }
         }catch (SQLException ex){
@@ -90,7 +92,7 @@ public class OperatorsDbRepository implements IOperatorsRepository{
             System.err.println("Error DB "+ex);
         }
         logger.traceExit();
-        return cars;
+        return operators;
     }
 
     @Override
