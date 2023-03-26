@@ -16,11 +16,11 @@
                   <Font name="Arial Black" size="24.0" />
                </font>
             </Label>
-            <TableView prefHeight="362.0" prefWidth="262.0" VBox.vgrow="ALWAYS">
+            <TableView fx:id="competitionsTableView" prefHeight="362.0" prefWidth="262.0" VBox.vgrow="ALWAYS">
               <columns>
-                <TableColumn prefWidth="80.79998779296875" text="Stil" />
-                <TableColumn prefWidth="76.0" text="Distanta" />
-                  <TableColumn prefWidth="101.60003662109375" text="Nr participanti" />
+                <TableColumn fx:id="styleColumn" prefWidth="80.79998779296875" text="Stil" />
+                <TableColumn fx:id="distanceColumn" prefWidth="76.0" text="Distanta" />
+                  <TableColumn fx:id="noParticipantsColumn" prefWidth="101.60003662109375" text="Nr participanti" />
               </columns>
             </TableView>
          </children>
@@ -34,11 +34,11 @@
                   <Font name="Arial Black" size="24.0" />
                </font>
             </Label>
-            <TableView prefHeight="362.0" prefWidth="262.0">
+            <TableView fx:id="participantsTableView" prefHeight="362.0" prefWidth="262.0">
                <columns>
-                  <TableColumn prefWidth="100.00000303983688" text="Nume" />
-                  <TableColumn prefWidth="104.0" text="Varsta" />
-                  <TableColumn prefWidth="131.1999969482422" text="Probe" />
+                  <TableColumn fx:id="nameColumn" prefWidth="100.00000303983688" text="Nume" />
+                  <TableColumn fx:id="ageColumn" prefWidth="104.0" text="Varsta" />
+                  <TableColumn fx:id="competitionsColumn" prefWidth="131.1999969482422" text="Probe" />
                </columns>
             </TableView>
          </children>

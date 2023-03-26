@@ -1,7 +1,7 @@
 package com.mpp.javaproject.swimmasterjfx.controller;
 
 import com.mpp.javaproject.swimmasterjfx.domain.Operator;
-import com.mpp.javaproject.swimmasterjfx.repository.OperatorsDbRepository;
+import com.mpp.javaproject.swimmasterjfx.repository.operator.OperatorsDbRepository;
 import com.mpp.javaproject.swimmasterjfx.service.OperatorsService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -48,7 +48,7 @@ public class LoginSceneController {
             return;
         }
 
-        Operator operator = srv.get_operator_by_username(usernameString);
+        Operator operator = srv.getOperatorByUsername(usernameString);
         if(operator == null){
             errorLabel.setText("Wrong username or password!");
             return;

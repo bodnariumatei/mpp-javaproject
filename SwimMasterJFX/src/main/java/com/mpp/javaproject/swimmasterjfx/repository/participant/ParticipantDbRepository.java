@@ -1,4 +1,4 @@
-package com.mpp.javaproject.swimmasterjfx.repository;
+package com.mpp.javaproject.swimmasterjfx.repository.participant;
 
 import com.mpp.javaproject.swimmasterjfx.domain.Participant;
 import com.mpp.javaproject.swimmasterjfx.utils.JdbcUtils;
@@ -112,5 +112,56 @@ public class ParticipantDbRepository implements IParticipantRepository{
     @Override
     public Participant update(Participant entity) {
         return null;
+    }
+
+    @Override
+    public Participant getOneByName(String name) {
+        logger.traceEntry("extracting participant with name {}", name);
+        Connection con = dbUtils.getConnection();
+        try(PreparedStatement preparedStatement = con.prepareStatement("select * from participants where name=?")){
+            preparedStatement.setString(1,name);
+            ResultSet result = preparedStatement.executeQuery();
+            result.next();
+            int id = result.getInt("id");
+            String pName = result.getString("name");
+            LocalDateTime dateOfBirth = LocalDateTime.parse(result.getString("date_of_birth"));
+
+            Participant participant = new Participant(pName, dateOfBirth);
+            participant.setId(id);
+            logger.traceExit();
+            return participant;
+        }catch (SQLException ex) {
+            logger.error(ex);
+            System.err.println("Error DB" + ex);
+            return null;
+        }
+    }
+
+    @Override
+    public Iterable<Participant> getAllFromCompetition(int competition_id) {
+        logger.traceEntry("extracting participants from competition with id {}", competition_id);
+        Connection con = dbUtils.getConnection();
+        List<Participant> participants = new ArrayList<>();
+        try(PreparedStatement preparedStatement = con.prepareStatement(
+                "select id,name,date_of_birth from participants p inner join registrations r on p.id=r.participant_id where r.competition_id=?")){
+            preparedStatement.setInt(1, competition_id);
+
+            try(ResultSet result = preparedStatement.executeQuery()) {
+                while (result.next()){
+                    int id = result.getInt("id");
+                    String name = result.getString("name");
+                    LocalDateTime dateOfBirth = LocalDateTime.parse(result.getString("date_of_birth"));
+
+                    Participant participant = new Participant(name, dateOfBirth);
+                    participant.setId(id);
+                    participants.add(participant);
+                }
+            }
+        }catch (SQLException ex){
+            logger.error(ex);
+            System.err.println("Error DB "+ex);
+        }
+        logger.traceExit();
+        return participants;
     }
 }

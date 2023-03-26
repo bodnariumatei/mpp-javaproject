@@ -1,4 +1,4 @@
-package com.mpp.javaproject.swimmasterjfx.repository;
+package com.mpp.javaproject.swimmasterjfx.repository.operator;
 
 import com.mpp.javaproject.swimmasterjfx.domain.Operator;
 import org.apache.logging.log4j.LogManager;

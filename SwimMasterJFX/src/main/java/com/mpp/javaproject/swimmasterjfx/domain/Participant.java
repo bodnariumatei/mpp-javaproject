@@ -30,4 +30,8 @@ public class Participant extends Entity<Integer> {
         return LocalDateTime.now().getYear() - dateOfBirth.getYear();
     }
 
+    @Override
+    public String toString() {
+        return "Name: " + this.name + " - age: " + this.getAge();
+    }
 }
