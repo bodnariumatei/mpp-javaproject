@@ -1,4 +1,7 @@
 # github-starting
 Starting with GitHub and IntelliJ
 
-Folosind IntelliJ, descarcati acest proiect pe calculatorul personal, adaugati o clasa  Java care tipareste un mesaj la consola si actualizati fisierele din repository-ul corespunzator.
+Proiect pentru administrarea înregistrărilor la un concurs de înot dezvoltat în Java.
+S-a folosit JavaFx pentru interfața grafică și SQLite pentru legătura la baza de date.
+
+## Acest repository conține codul dezvoltat pentru tema2 - „Proiectati si implementati partea de servicii si interfata grafica a proiectului”
